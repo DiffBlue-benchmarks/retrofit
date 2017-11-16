@@ -1,0 +1,1048 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Results</title>
+  <style>
+    /* Standard styles */
+
+    body {
+      font-family: "Aial", sans-serif;
+      background-color: #EAF4F9;
+      color: black;
+      margin: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-weight: bold;
+    }
+
+    p,
+    a,
+    table,
+    ul {
+      font-size: 12pt;
+    }
+
+    h4 {
+      font-size: 12pt;
+    }
+
+    h3 {
+      font-size: 14pt;
+    }
+
+    h2 {
+      font-size: 16pt;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    tt {
+      font-family: "Liberation Mono", monospace;
+    }
+
+    tt {
+      font-size: 10pt;
+    }
+
+    main {
+      max-width: 620px;
+      margin: 0 auto;
+    }
+    /* Table styling */
+
+    table {
+      width: 100%;
+      font-size: 12px;
+    }
+
+    table,
+    th,
+    td {
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 5px;
+    }
+
+    th {
+      background: #B5DEF2;
+      font-size: 14px;
+      text-align: left;
+    }
+
+    td:first-child,
+    th:first-child {
+      border-right: 1px solid #36A9E0;
+    }
+
+    td:last-child,
+    th:last-child {
+      border-left: 1px solid #36A9E0;
+    }
+
+    td {
+      background: white;
+      padding: 8px 10px;
+    }
+
+    tr:not(:last-child) {
+      border-bottom: 1px solid #36A9E0;
+    }
+    /* Title wrapper */
+
+    .title-wrapper {
+      background: white;
+      padding: 5px 0;
+    }
+
+    .title-wrapper h1 {
+      max-width: 620px;
+      margin: 0 auto;
+      color: #0577BD;
+    }
+
+    .title-wrapper h1>span {
+      color: #0D3C62;
+    }
+    /* Status wrapper */
+
+    .status-wrapper {
+      margin-top: 10px;
+    }
+
+    .status-wrapper td {
+      background: none;
+    }
+
+    .status-wrapper a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    /* Status styles */
+
+    .failed {
+      background: #F1596B;
+      color: white;
+      font-weight: bold;
+    }
+    /* Traffic Lights */
+
+    [class^='circle'] {
+      width: 66px;
+      height: 66px;
+      border: 2px solid white;
+      border-radius: 100%;
+      color: white;
+      text-align: center;
+      font-size: 35px;
+      font-weight: bold;
+      line-height: 66px;
+    }
+
+    .circle__failed {
+      background: #F1596B;
+    }
+
+    .circle__failed:before {
+      content: '\002715'
+    }
+
+    .circle__warning {
+      background: #F6A623;
+    }
+
+    .circle__warning:before {
+      content: '\0021'
+    }
+
+    .circle__success {
+      background: #7ED321;
+    }
+
+    .circle__success:before {
+      content: '\002713'
+    }
+  </style>
+</head>
+<body>
+  <div class="title-wrapper">
+    <h1>Results from the script <span>'diffblue_check.py'</span></h1>
+  </div>
+  <main>
+    <table style="border:hidden" class="status-wrapper">
+      <tr style="border:hidden">
+        <td style="border:hidden" width="66px">
+           <div class="circle__warning"></div>
+        </td>
+        <td style="border:hidden">The automated generation of unit tests can be used for your Java application. However, due to some calls to unsupported library functions (31.4%) the coverage might not be as high as it usually is. See the section <a href="#java_app_statistics">Java Project Statistics</a> bellow.</td>
+      </tr>
+    </table>
+    <h2 id="system_requirements">Checking system requirements</h2>
+    <h2 id="java_app_statistics">Java Project Statistics</h2>
+    <table>
+      <col width="340">
+      <col width="280">
+      <tr>
+        <th>Property</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>Path to the checked Java application</td>
+        <td>.</td>
+      </tr>
+      <tr>
+        <td>Uses Maven build system?</td>
+        <td>True</td>
+      </tr>
+      <tr>
+        <td>Number of Java classes</td>
+        <td>814</td>
+      </tr>
+      <tr>
+        <td>Number of methods in all classes</td>
+        <td>4189</td>
+      </tr>
+      <tr>
+        <td>Number of synchronized methods in all classes</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Number of volatile elements in all classes</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td>Number of bytecodes in all methods</td>
+        <td>44461</td>
+      </tr>
+      <tr>
+        <td>Number of loops in all methods</td>
+        <td>67</td>
+      </tr>
+      <tr>
+        <td>Number of synchronized blocks in all methods</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>Number of calls to java.util.concurrent classes (atomic / locks / thread / remaining)</td>
+        <td>129 / 0 / 1 / 50</td>
+      </tr>
+      <tr>
+        <td>Number of calls to thread pool constructors (fixed / scheduled / fork_join)</td>
+        <td>3 / 0 / 0</td>
+      </tr>
+      <tr>
+        <td>Number of calls to object synchronizers (wait / timed wait / notify / notifyAll)</td>
+        <td>0 / 0 / 0 / 0</td>
+      </tr>
+      <tr>
+        <td>Number of calls to thread elements (start / sleep / interrupt / join)</td>
+        <td>1 / 1 / 0 / 0</td>
+      </tr>
+      <tr>
+        <td>Number of method calls within the Java application</td>
+        <td>2306</td>
+      </tr>
+      <tr>
+        <td>Number of calls to the Java standard library</td>
+        <td>2094</td>
+      </tr>
+      <tr>
+        <td>Number of calls to other Java libraries</td>
+        <td>6953</td>
+      </tr>
+      <tr>
+        <td>Total number of calls in the Java application</td>
+        <td>11353</td>
+      </tr>
+      <tr>
+        <td>Number of calls to supported Java Standard Library functions</td>
+        <td>1436</td>
+      </tr>
+      <tr>
+        <td>Number of calls to unsupported Java Standard Library functions</td>
+        <td>658</td>
+      </tr>
+    </table>
+    <h2 id="non_modelled_library_calls">Calls to unsupported library functions</h2>
+    <table>
+      <col width="60">
+      <col width="660">
+      <col width="60">
+      <tr>
+        <th>#</th>
+        <th>Method name</th>
+        <th>#calls</th>
+      </tr>
+      <tr>
+        <td align="right">1</td>
+        <td>java/util/concurrent/atomic/AtomicReference.get:()Ljava/lang/Object;</td>
+        <td align="right">101</td>
+      </tr>
+      <tr>
+        <td align="right">2</td>
+        <td>java/util/concurrent/atomic/AtomicReference."&lt;init&gt;":()V</td>
+        <td align="right">100</td>
+      </tr>
+      <tr>
+        <td align="right">3</td>
+        <td>java/util/concurrent/atomic/AtomicReference.compareAndSet:(Ljava/lang/Object;Ljava/lang/Object;)Z</td>
+        <td align="right">67</td>
+      </tr>
+      <tr>
+        <td align="right">4</td>
+        <td>java/util/concurrent/atomic/AtomicReference.set:(Ljava/lang/Object;)V</td>
+        <td align="right">33</td>
+      </tr>
+      <tr>
+        <td align="right">5</td>
+        <td>java/util/concurrent/CountDownLatch.countDown:()V</td>
+        <td align="right">28</td>
+      </tr>
+      <tr>
+        <td align="right">6</td>
+        <td>java/lang/Class.isAssignableFrom:(Ljava/lang/Class;)Z</td>
+        <td align="right">25</td>
+      </tr>
+      <tr>
+        <td align="right">7</td>
+        <td>java/util/concurrent/CountDownLatch."&lt;init&gt;":(I)V</td>
+        <td align="right">25</td>
+      </tr>
+      <tr>
+        <td align="right">8</td>
+        <td>java/util/concurrent/CountDownLatch.await:(JLjava/util/concurrent/TimeUnit;)Z</td>
+        <td align="right">24</td>
+      </tr>
+      <tr>
+        <td align="right">9</td>
+        <td>java/util/LinkedHashMap."&lt;init&gt;":()V</td>
+        <td align="right">18</td>
+      </tr>
+      <tr>
+        <td align="right">10</td>
+        <td>java/util/concurrent/atomic/AtomicInteger.get:()I</td>
+        <td align="right">16</td>
+      </tr>
+      <tr>
+        <td align="right">11</td>
+        <td>java/util/concurrent/atomic/AtomicInteger."&lt;init&gt;":()V</td>
+        <td align="right">10</td>
+      </tr>
+      <tr>
+        <td align="right">12</td>
+        <td>java/lang/IllegalArgumentException.getCause:()Ljava/lang/Throwable;</td>
+        <td align="right">9</td>
+      </tr>
+      <tr>
+        <td align="right">13</td>
+        <td>java/util/concurrent/atomic/AtomicInteger.incrementAndGet:()I</td>
+        <td align="right">9</td>
+      </tr>
+      <tr>
+        <td align="right">14</td>
+        <td>java/util/concurrent/atomic/AtomicBoolean.get:()Z</td>
+        <td align="right">8</td>
+      </tr>
+      <tr>
+        <td align="right">15</td>
+        <td>java/lang/Class.getComponentType:()Ljava/lang/Class;</td>
+        <td align="right">7</td>
+      </tr>
+      <tr>
+        <td align="right">16</td>
+        <td>java/util/concurrent/TimeUnit.toMillis:(J)J</td>
+        <td align="right">7</td>
+      </tr>
+      <tr>
+        <td align="right">17</td>
+        <td>java/util/ArrayDeque."&lt;init&gt;":()V</td>
+        <td align="right">6</td>
+      </tr>
+      <tr>
+        <td align="right">18</td>
+        <td>java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;</td>
+        <td align="right">6</td>
+      </tr>
+      <tr>
+        <td align="right">19</td>
+        <td>java/util/concurrent/CompletableFuture.get:()Ljava/lang/Object;</td>
+        <td align="right">6</td>
+      </tr>
+      <tr>
+        <td align="right">20</td>
+        <td>java/util/concurrent/ExecutionException.getCause:()Ljava/lang/Throwable;</td>
+        <td align="right">6</td>
+      </tr>
+      <tr>
+        <td align="right">21</td>
+        <td>java/util/concurrent/atomic/AtomicBoolean."&lt;init&gt;":()V</td>
+        <td align="right">6</td>
+      </tr>
+      <tr>
+        <td align="right">22</td>
+        <td>java/util/concurrent/atomic/AtomicInteger.set:(I)V</td>
+        <td align="right">6</td>
+      </tr>
+      <tr>
+        <td align="right">23</td>
+        <td>java/util/concurrent/atomic/AtomicBoolean.set:(Z)V</td>
+        <td align="right">5</td>
+      </tr>
+      <tr>
+        <td align="right">24</td>
+        <td>java/lang/reflect/Method.getAnnotations:()[Ljava/lang/annotation/Annotation;</td>
+        <td align="right">4</td>
+      </tr>
+      <tr>
+        <td align="right">25</td>
+        <td>java/util/HashMap."&lt;init&gt;":()V</td>
+        <td align="right">4</td>
+      </tr>
+      <tr>
+        <td align="right">26</td>
+        <td>java/io/IOException.getMessage:()Ljava/lang/String;</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">27</td>
+        <td>java/lang/IllegalArgumentException.getMessage:()Ljava/lang/String;</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">28</td>
+        <td>java/lang/Thread.sleep:(J)V</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">29</td>
+        <td>java/lang/reflect/Method.getGenericReturnType:()Ljava/lang/reflect/Type;</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">30</td>
+        <td>java/util/Arrays.equals:([Ljava/lang/Object;[Ljava/lang/Object;)Z</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">31</td>
+        <td>java/util/Collections.unmodifiableList:(Ljava/util/List;)Ljava/util/List;</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">32</td>
+        <td>java/util/LinkedHashSet."&lt;init&gt;":()V</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">33</td>
+        <td>java/util/concurrent/CompletableFuture.completeExceptionally:(Ljava/lang/Throwable;)Z</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">34</td>
+        <td>java/util/concurrent/atomic/AtomicLong."&lt;init&gt;":()V</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">35</td>
+        <td>java/util/concurrent/atomic/AtomicLong.get:()J</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">36</td>
+        <td>java/util/concurrent/atomic/AtomicLong.set:(J)V</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">37</td>
+        <td>java/util/regex/Pattern.matcher:(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">38</td>
+        <td>java/lang/Class.getDeclaredMethod:(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">39</td>
+        <td>java/lang/Class.getDeclaredMethods:()[Ljava/lang/reflect/Method;</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">40</td>
+        <td>java/lang/Class.getGenericInterfaces:()[Ljava/lang/reflect/Type;</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">41</td>
+        <td>java/lang/Class.getGenericSuperclass:()Ljava/lang/reflect/Type;</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">42</td>
+        <td>java/lang/Class.getInterfaces:()[Ljava/lang/Class;</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">43</td>
+        <td>java/lang/Class.isAnnotationPresent:(Ljava/lang/Class;)Z</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">44</td>
+        <td>java/lang/RuntimeException.getCause:()Ljava/lang/Throwable;</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">45</td>
+        <td>java/lang/reflect/Method.getDeclaringClass:()Ljava/lang/Class;</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">46</td>
+        <td>java/lang/reflect/Method.invoke:(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">47</td>
+        <td>java/lang/reflect/Proxy.newProxyInstance:(Ljava/lang/ClassLoader;[Ljava/lang/Class;Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">48</td>
+        <td>java/net/URI.create:(Ljava/lang/String;)Ljava/net/URI;</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">49</td>
+        <td>java/util/Collections.emptyList:()Ljava/util/List;</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">50</td>
+        <td>java/util/Collections.singletonMap:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">51</td>
+        <td>java/util/Random."&lt;init&gt;":(J)V</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">52</td>
+        <td>java/util/Random.nextInt:(I)I</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">53</td>
+        <td>java/util/concurrent/CompletableFuture."&lt;init&gt;":()V</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">54</td>
+        <td>java/util/concurrent/CompletableFuture.cancel:(Z)Z</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">55</td>
+        <td>java/util/concurrent/CompletableFuture.complete:(Ljava/lang/Object;)Z</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">56</td>
+        <td>java/util/concurrent/ConcurrentHashMap."&lt;init&gt;":()V</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">57</td>
+        <td>java/util/concurrent/Executors.newSingleThreadExecutor:()Ljava/util/concurrent/ExecutorService;</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">58</td>
+        <td>java/util/concurrent/TimeUnit.convert:(JLjava/util/concurrent/TimeUnit;)J</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">59</td>
+        <td>java/util/concurrent/atomic/AtomicBoolean.compareAndSet:(ZZ)Z</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">60</td>
+        <td>java/util/regex/Matcher.find:()Z</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">61</td>
+        <td>java/util/regex/Pattern.compile:(Ljava/lang/String;)Ljava/util/regex/Pattern;</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">62</td>
+        <td>java/lang/Class.getDeclaredConstructor:([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">63</td>
+        <td>java/lang/Class.getDeclaredField:(Ljava/lang/String;)Ljava/lang/reflect/Field;</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">64</td>
+        <td>java/lang/Class.getTypeParameters:()[Ljava/lang/reflect/TypeVariable;</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">65</td>
+        <td>java/lang/IllegalStateException.getCause:()Ljava/lang/Throwable;</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">66</td>
+        <td>java/lang/IllegalStateException.getMessage:()Ljava/lang/String;</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">67</td>
+        <td>java/lang/Thread."&lt;init&gt;":(Ljava/lang/Runnable;)V</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">68</td>
+        <td>java/lang/Thread.start:()V</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">69</td>
+        <td>java/lang/invoke/MethodHandle.bindTo:(Ljava/lang/Object;)Ljava/lang/invoke/MethodHandle;</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">70</td>
+        <td>java/lang/invoke/MethodHandle.invokeWithArguments:([Ljava/lang/Object;)Ljava/lang/Object;</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">71</td>
+        <td>java/lang/invoke/MethodHandles$Lookup.unreflectSpecial:(Ljava/lang/reflect/Method;Ljava/lang/Class;)Ljava/lang/invoke/MethodHandle;</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">72</td>
+        <td>java/lang/reflect/Array.get:(Ljava/lang/Object;I)Ljava/lang/Object;</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">73</td>
+        <td>java/lang/reflect/Array.getLength:(Ljava/lang/Object;)I</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">74</td>
+        <td>java/lang/reflect/Array.newInstance:(Ljava/lang/Class;I)Ljava/lang/Object;</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">75</td>
+        <td>java/lang/reflect/Constructor.newInstance:([Ljava/lang/Object;)Ljava/lang/Object;</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">76</td>
+        <td>java/lang/reflect/Constructor.setAccessible:(Z)V</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">77</td>
+        <td>java/lang/reflect/Field.get:(Ljava/lang/Object;)Ljava/lang/Object;</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">78</td>
+        <td>java/lang/reflect/Method.getGenericParameterTypes:()[Ljava/lang/reflect/Type;</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">79</td>
+        <td>java/lang/reflect/Method.getName:()Ljava/lang/String;</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">80</td>
+        <td>java/lang/reflect/Method.getParameterAnnotations:()[[Ljava/lang/annotation/Annotation;</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">81</td>
+        <td>java/lang/reflect/Method.isDefault:()Z</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">82</td>
+        <td>java/math/BigInteger."&lt;init&gt;":(Ljava/lang/String;)V</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">83</td>
+        <td>java/util/Arrays.hashCode:([Ljava/lang/Object;)I</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">84</td>
+        <td>java/util/Collections.emptySet:()Ljava/util/Set;</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">85</td>
+        <td>java/util/Collections.synchronizedSet:(Ljava/util/Set;)Ljava/util/Set;</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">86</td>
+        <td>java/util/Collections.unmodifiableSet:(Ljava/util/Set;)Ljava/util/Set;</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">87</td>
+        <td>java/util/LinkedHashMap."&lt;init&gt;":(Ljava/util/Map;)V</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">88</td>
+        <td>java/util/Optional.isPresent:()Z</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">89</td>
+        <td>java/util/Optional.ofNullable:(Ljava/lang/Object;)Ljava/util/Optional;</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">90</td>
+        <td>java/util/Random."&lt;init&gt;":()V</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">91</td>
+        <td>java/util/Random.nextFloat:()F</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">92</td>
+        <td>java/util/concurrent/ConcurrentHashMap.putIfAbsent:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">93</td>
+        <td>java/util/concurrent/CountDownLatch.await:()V</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">94</td>
+        <td>java/util/concurrent/Executors.newCachedThreadPool:()Ljava/util/concurrent/ExecutorService;</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">95</td>
+        <td>java/util/concurrent/Executors.newFixedThreadPool:(I)Ljava/util/concurrent/ExecutorService;</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">96</td>
+        <td>java/util/concurrent/atomic/AtomicInteger."&lt;init&gt;":(I)V</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">97</td>
+        <td>java/util/regex/Matcher.group:(I)Ljava/lang/String;</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">98</td>
+        <td>java/util/regex/Matcher.matches:()Z</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">99</td>
+        <td>java/util/regex/Pattern.pattern:()Ljava/lang/String;</td>
+        <td align="right">1</td>
+      </tr>
+    </table>
+    <h2 id="other_library_calls">Other library classes used</h2>
+    <table>
+      <col width="60">
+      <col width="660">
+      <col width="60">
+      <tr>
+        <th>#</th>
+        <th>Class name</th>
+        <th>#calls</th>
+      </tr>
+      <tr>
+        <td align="right">1</td>
+        <td>org/assertj/core/api/Assertions</td>
+        <td align="right">1048</td>
+      </tr>
+      <tr>
+        <td align="right">2</td>
+        <td>okhttp3/mockwebserver/MockWebServer</td>
+        <td align="right">499</td>
+      </tr>
+      <tr>
+        <td align="right">3</td>
+        <td>okhttp3/mockwebserver/MockResponse</td>
+        <td align="right">475</td>
+      </tr>
+      <tr>
+        <td align="right">4</td>
+        <td>org/assertj/core/api/AbstractCharSequenceAssert</td>
+        <td align="right">346</td>
+      </tr>
+      <tr>
+        <td align="right">5</td>
+        <td>retrofit2/Retrofit$Builder</td>
+        <td align="right">339</td>
+      </tr>
+      <tr>
+        <td align="right">6</td>
+        <td>org/assertj/core/api/AbstractThrowableAssert</td>
+        <td align="right">295</td>
+      </tr>
+      <tr>
+        <td align="right">7</td>
+        <td>org/junit/Assert</td>
+        <td align="right">254</td>
+      </tr>
+      <tr>
+        <td align="right">8</td>
+        <td>okhttp3/Request</td>
+        <td align="right">226</td>
+      </tr>
+      <tr>
+        <td align="right">9</td>
+        <td>org/assertj/core/api/AbstractObjectAssert</td>
+        <td align="right">178</td>
+      </tr>
+      <tr>
+        <td align="right">10</td>
+        <td>retrofit2/Response</td>
+        <td align="right">174</td>
+      </tr>
+      <tr>
+        <td align="right">11</td>
+        <td>org/assertj/core/api/AbstractIntegerAssert</td>
+        <td align="right">120</td>
+      </tr>
+      <tr>
+        <td align="right">12</td>
+        <td>okio/Buffer</td>
+        <td align="right">110</td>
+      </tr>
+      <tr>
+        <td align="right">13</td>
+        <td>org/assertj/core/api/AbstractBooleanAssert</td>
+        <td align="right">107</td>
+      </tr>
+      <tr>
+        <td align="right">14</td>
+        <td>okhttp3/HttpUrl</td>
+        <td align="right">86</td>
+      </tr>
+      <tr>
+        <td align="right">15</td>
+        <td>okhttp3/ResponseBody</td>
+        <td align="right">77</td>
+      </tr>
+      <tr>
+        <td align="right">16</td>
+        <td>okhttp3/Headers</td>
+        <td align="right">76</td>
+      </tr>
+      <tr>
+        <td align="right">17</td>
+        <td>org/mockito/Mockito</td>
+        <td align="right">72</td>
+      </tr>
+      <tr>
+        <td align="right">18</td>
+        <td>rx/plugins/RxJavaPlugins</td>
+        <td align="right">69</td>
+      </tr>
+      <tr>
+        <td align="right">19</td>
+        <td>okhttp3/RequestBody</td>
+        <td align="right">57</td>
+      </tr>
+      <tr>
+        <td align="right">20</td>
+        <td>okhttp3/mockwebserver/RecordedRequest</td>
+        <td align="right">53</td>
+      </tr>
+      <tr>
+        <td align="right">21</td>
+        <td>retrofit2/helpers/ToStringConverterFactory</td>
+        <td align="right">45</td>
+      </tr>
+      <tr>
+        <td align="right">22</td>
+        <td>rx/Observable</td>
+        <td align="right">40</td>
+      </tr>
+      <tr>
+        <td align="right">23</td>
+        <td>io/reactivex/exceptions/Exceptions</td>
+        <td align="right">37</td>
+      </tr>
+      <tr>
+        <td align="right">24</td>
+        <td>io/reactivex/plugins/RxJavaPlugins</td>
+        <td align="right">37</td>
+      </tr>
+      <tr>
+        <td align="right">25</td>
+        <td>org/assertj/core/api/AbstractListAssert</td>
+        <td align="right">35</td>
+      </tr>
+      <tr>
+        <td align="right">26</td>
+        <td>io/reactivex/Observable</td>
+        <td align="right">32</td>
+      </tr>
+      <tr>
+        <td align="right">27</td>
+        <td>io/reactivex/Notification</td>
+        <td align="right">31</td>
+      </tr>
+      <tr>
+        <td align="right">28</td>
+        <td>okhttp3/Response$Builder</td>
+        <td align="right">31</td>
+      </tr>
+      <tr>
+        <td align="right">29</td>
+        <td>okhttp3/Request$Builder</td>
+        <td align="right">26</td>
+      </tr>
+      <tr>
+        <td align="right">30</td>
+        <td>rx/Subscriber</td>
+        <td align="right">26</td>
+      </tr>
+      <tr>
+        <td align="right">31</td>
+        <td>okhttp3/Response</td>
+        <td align="right">17</td>
+      </tr>
+      <tr>
+        <td align="right">32</td>
+        <td>com/google/protobuf/GeneratedMessage$ExtendableBuilder</td>
+        <td align="right">16</td>
+      </tr>
+      <tr>
+        <td align="right">33</td>
+        <td>rx/Single</td>
+        <td align="right">16</td>
+      </tr>
+      <tr>
+        <td align="right">34</td>
+        <td>io/reactivex/exceptions/CompositeException</td>
+        <td align="right">15</td>
+      </tr>
+      <tr>
+        <td align="right">35</td>
+        <td>okio/ByteString</td>
+        <td align="right">14</td>
+      </tr>
+      <tr>
+        <td align="right">36</td>
+        <td>rx/observers/TestSubscriber</td>
+        <td align="right">13</td>
+      </tr>
+      <tr>
+        <td align="right">37</td>
+        <td>rx/plugins/RxJavaErrorHandler</td>
+        <td align="right">13</td>
+      </tr>
+      <tr>
+        <td align="right">38</td>
+        <td>com/fasterxml/jackson/databind/ObjectMapper</td>
+        <td align="right">11</td>
+      </tr>
+      <tr>
+        <td align="right">39</td>
+        <td>okhttp3/OkHttpClient$Builder</td>
+        <td align="right">10</td>
+      </tr>
+      <tr>
+        <td align="right">40</td>
+        <td>rx/Completable</td>
+        <td align="right">10</td>
+      </tr>
+      <tr>
+        <td align="right">41</td>
+        <td>com/google/protobuf/GeneratedMessage</td>
+        <td align="right">9</td>
+      </tr>
+      <tr>
+        <td align="right">42</td>
+        <td>com/squareup/wire/ProtoAdapter</td>
+        <td align="right">9</td>
+      </tr>
+      <tr>
+        <td align="right">43</td>
+        <td>org/junit/runners/model/Statement</td>
+        <td align="right">9</td>
+      </tr>
+      <tr>
+        <td align="right">44</td>
+        <td>rx/exceptions/Exceptions</td>
+        <td align="right">9</td>
+      </tr>
+      <tr>
+        <td align="right">45</td>
+        <td>com/squareup/moshi/JsonAdapter</td>
+        <td align="right">8</td>
+      </tr>
+      <tr>
+        <td align="right">46</td>
+        <td>org/assertj/core/api/AbstractIterableAssert</td>
+        <td align="right">8</td>
+      </tr>
+      <tr>
+        <td align="right">47</td>
+        <td>rx/Notification</td>
+        <td align="right">8</td>
+      </tr>
+      <tr>
+        <td align="right">48</td>
+        <td>rx/schedulers/TestScheduler</td>
+        <td align="right">8</td>
+      </tr>
+      <tr>
+        <td align="right">49</td>
+        <td>io/reactivex/observers/TestObserver</td>
+        <td align="right">7</td>
+      </tr>
+      <tr>
+        <td align="right">50</td>
+        <td>org/assertj/core/api/AbstractLongAssert</td>
+        <td align="right">7</td>
+      </tr>
+    </table>
+    <p>NOTE: the table shows the first 50 most popular calls out of 343 calls.</p>
+  </main>
+</body>
+</html>
